@@ -1,0 +1,24 @@
+to_delete_parts:
+  - <iwb:element background="true" ref="104"/>
+  - </iwb>
+  - <?xml version="1.0" encoding="UTF-8"?>
+  - <iwb xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" xmlns:iwb="http://www.becta.org.uk/iwb" version="1.0">
+  - <iwb:meta content="Promethean" name="owner"/>
+  - <iwb:meta content="Promethean Flipchart" name="description"/>
+  - <iwb:meta content="ActivInspire" name="creator"/>
+  - :svg
+  - :pageset
+  - :page
+# These parts are going to be replaced with the string in the right
+to_substitute_parts:
+  - from: svg:rect
+    to: rect
+  - from: svg:polyline
+    to: polyline
+  - from: </svg:page>
+    to: </svg>
+  - from: </svg:pageset>
+    to: </svg>
+extra_part_to_delete: <!-- Additional properties of elements, the iwb tags. -->
+
+   
