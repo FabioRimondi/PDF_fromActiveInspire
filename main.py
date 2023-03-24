@@ -52,7 +52,7 @@ def main_sequence():
         print("Saving as PDF..")
 
         output_file = os.path.join("OUT", file_in_list[:-4] + ".pdf")
-        os.system("cat \""+ str(temp_svg_file) +"\" |  inkscape --pipe --export-area-drawing --export-filename=\"" + output_file + "\"")
+        os.system("inkscape --file=\"" + str(temp_svg_file) + "\" --without-gui --export-area-drawing --export-pdf=\"" + output_file + "\"")
 
         print("PDF Saved as " + str(output_file))
     
